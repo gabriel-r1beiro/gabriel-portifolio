@@ -4,17 +4,17 @@ import yey from '../../../../assets/yey.svg';
 
 export const Projects = () => {
   return (
-    <section className="flex flex-col h-screen">
+    <section className="mb-10 flex flex-col  max-w-screen-lg w-full pt-14" id='projects'>
       <h2 className="text-2xl text-indigo-600 border-b-2 border-indigo-600">
         Projetos
       </h2>
 
       {data.map((item, ind) => {
         return (
-          <article className="max-w-5xl flex-col gap-20 max-h-80 flex items-center h-full w-full mt-10 bg-gray-50 shadow p-3">
-            <div key={ind} className="flex gap-3">
+          <article className="max-w-5xl  flex-col max-h-80 flex items-center h-full w-full mt-10 bg-gray-50 shadow p-3">
+            <div key={ind} className="flex gap-16">
               {item.lefRigh === 'left' ? (
-                <img className="max-w-lg rounded" src={item.url} alt="as" />
+                <img className="max-w-lg rounded " src={item.url} alt="Project" />
               ) : (
                 ''
               )}
@@ -45,15 +45,15 @@ export const Projects = () => {
                   <a
                     href={item.deploy}
                     target="_blank"
-                    className="py-1 px-4 transition-all hover:bg-blue-400  bg-white shadow text-black rounded flex gap-2 items-center"
+                    className="hover:scale-105 py-1 px-4 transition-all hover:bg-blue-400  bg-white shadow text-black rounded flex gap-2 items-center"
                   >
-                    <img src={yey} alt="deploy" className="max-w-6" />
+                    <img src={yey} alt="deploy" className="max-w-6 " />
                     Deploy
                   </a>
                   <a
                     href={item.deploy}
                     target="_blank"
-                    className="py-1 px-4 transition hover:bg-gray-700 hover:text-white bg-white shadow text-black rounded flex gap-2 items-center"
+                    className="hover:scale-105 py-1 px-4 transition hover:bg-gray-700 hover:text-white bg-white shadow text-black rounded flex gap-2 items-center"
                   >
                     <span>
                       <FaGithub />
