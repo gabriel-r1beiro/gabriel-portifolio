@@ -1,15 +1,8 @@
 import webExemplo from '../../../../../assets/projetos/webexemplo.jpg';
+import { UseDataState } from '../type.project';
 
-interface Data {
-  url: string;
-  title: string;
-  description: string;
-  tecnologias: string[];
-  deploy: string;
-  github: string;
-  lefRigh: string;
-}
-export const data: Data[] = [
+
+export const data: UseDataState[] = [
   {
     url: webExemplo,
     title: 'Instagram Clone',

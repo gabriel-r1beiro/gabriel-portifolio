@@ -5,7 +5,6 @@ import { Header } from './components/Header';
 import { Main } from './components/Main/index';
 import './index.css';
 import { Events, scrollSpy } from 'react-scroll';
-import Test from './components/test';
 
 function App() {
   useEffect(() => {
@@ -30,8 +29,6 @@ function App() {
       <Main />
       <Contact />
       <Footer />
-
-      <Test/>
     </div>
   );
 }
